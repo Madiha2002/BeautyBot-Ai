@@ -1,0 +1,23 @@
+[debug] [2024-09-29T13:46:11.342Z] ----------------------------------------------------------------------
+[debug] [2024-09-29T13:46:11.345Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Abdullah Alamgir\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js apps:create android tryon_makeup_website_2 (android) --package-name="com.example.tryon_makeup_website_2" --json --project=beautybot-97850
+[debug] [2024-09-29T13:46:11.345Z] CLI Version:   13.11.2
+[debug] [2024-09-29T13:46:11.346Z] Platform:      win32
+[debug] [2024-09-29T13:46:11.346Z] Node Version:  v21.4.0
+[debug] [2024-09-29T13:46:11.346Z] Time:          Sun Sep 29 2024 18:46:11 GMT+0500 (Pakistan Standard Time)
+[debug] [2024-09-29T13:46:11.346Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-09-29T13:46:11.444Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"flutter"}
+[debug] [2024-09-29T13:46:11.451Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-09-29T13:46:11.451Z] > authorizing via signed-in user (beautybot36@gmail.com)
+[info] Create your ANDROID app in project beautybot-97850:
+[debug] [2024-09-29T13:46:11.457Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/beautybot-97850/androidApps [none]
+[debug] [2024-09-29T13:46:11.457Z] >>> [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/beautybot-97850/androidApps {"displayName":"tryon_makeup_website_2 (android)","packageName":"\"com.example.tryon_makeup_website_2\""}
+[debug] [2024-09-29T13:46:13.686Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/beautybot-97850/androidApps 400
+[debug] [2024-09-29T13:46:13.687Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/beautybot-97850/androidApps {"error":{"code":400,"message":"Request contains an invalid argument.","status":"INVALID_ARGUMENT"}}
+[debug] [2024-09-29T13:46:13.688Z] HTTP Error: 400, Request contains an invalid argument.
+[debug] [2024-09-29T13:46:18.470Z] FirebaseError: HTTP Error: 400, Request contains an invalid argument.
+    at responseToError (C:\Users\Abdullah Alamgir\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\Abdullah Alamgir\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:305:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create Android app for project beautybot-97850. See firebase-debug.log for more info.
